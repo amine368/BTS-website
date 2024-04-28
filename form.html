@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="CSS.css" rel="stylesheet">
+    <title>Inscription</title>
+</head>
+
+<body>
+    <div class="inscription" id="inscription">
+        <h1>Inscription au Brevet de Technicien Supérieur de Kenitra:</h1>
+        <fieldset>
+            <form action="confirmation.txt" method="get" enctype="multipart/form-data">
+                <table>
+                    <tr>
+                        <td><label for="nom">Nom</label></td>
+                        <td><input type="text" id="nom" name="nom" placeholder="Entrer le nom..."></td>
+                    </tr>
+                    <tr>
+                        <td><label for="prenom">Prénom</label></td>
+                        <td><input type="text" id="prenom" name="prenom" placeholder="Entrer le prénom..."></td>
+                    </tr>
+                    <tr>
+                        <td><label for="ddn">Date de naissance</label></td>
+                        <td><input type="date" id="ddn" name="ddn" placeholder="jj/mm/aaaa"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">Email</label></td>
+                        <td><input type="email" id="email" name="email" placeholder="Entrer votre email..."></td>
+                    </tr>
+                    <tr>
+                        <td><label>Sexe</label></td>
+                        <td>
+                            M<input type="radio" name="sexe" id="sexeM" checked value="M">
+                            F<input type="radio" name="sexe" id="sexeF" value="F">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="filiere">Filière</label></td>
+                        <td>
+                            <select name="filiere" id="filiere">
+                                <option value="dsi">DSI</option>
+                                <option value="SE">SE</option>
+                                <option value="CPI">CPI</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="password">Mot de passe</label></td>
+                        <td><input type="password" id="password" name="password" placeholder="Entrer le mot de passe..."></td>
+                    </tr>
+                    <tr>
+                        <td><label for="confirm_password">Confirmation de mot de passe</label></td>
+                        <td><input type="password" id="confirm_password" name="confirm_password" placeholder="Confirmer le mot de passe..."></td>
+                    </tr>
+                    <tr>
+                        <td><input type="submit" value="Submit"></td>
+                        <td><input type="reset" value="Reset"></td>
+                    </tr>
+                </table>
+            </form>
+        </fieldset>
+    </div>
+</body>
+
+</html>
